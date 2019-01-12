@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei UI";
+    color: #333333;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+input{
+    border: none;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+}
+    .f_left{
+float: left;
+    }
+.f_right{
+    float: right;
+}
+
+.clearFix::before,
+.clearFix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+.m-l10{
+    margin-left: 10px;
+}
+.m-r10{
+    margin-right: 10px;
+}
+.m-t10{
+    margin-top: 10px;
+}
+
+.m-b10{
+margin-bottom: 10px;
+}
+[class^="icon_"],[class*=" icon_"]{
+    background-image: url("../images/sprites.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+
+}
